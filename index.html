@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="animate.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="script.js"></script>    
+            </head>
+                <body bgcolor="pink">
+
+                    <h2>Sign UP form</h2>
+                    <p>First Name</p>
+                    <input type="text" name="" id="firstname" onblur="fname_val()" onclick="fname_val_close()">
+                    <i class="fa fa-check" id="icon" style="display: none;"></i><br>
+                    <p>Last Name</p>
+                    <input type="text" name="text" id="lastname" onclick="fname_val();lname_val_close()" onblur="lname_val();uname_val()" > <i class="fa fa-check" style="display: none"; id="icon2"></i><br><br>
+                    <p>Mobile No.</p>
+                    <input type="text" name="" id="mobile" onclick="fname_val();lname_val();mobile_stop_validation()"  onblur="mobile_val()"> <i class="fa fa-check" style="display: none" id="icon3"></i><br><br>
+                    <p>Re-Mobile No.</p>
+                    <input type="number" name="" id="remobile" onclick="fname_val();lname_val()" onblur="remobile_val()"> <i class="fa fa-check" style="display: none" id="retick"></i><br><br>
+                    <p>E-mail</p>
+                    <input type="email" name="" id="email" onclick="fname_val();lname_val()" oninput="email_val()"> <i class="fa fa-check" style="display: none" id="echeck"></i>
+                    <div id="email_hint" style="display: none;">
+                        <span id="gmail" style="color: red;cursor: pointer;" onclick="gmail()">gmail.com</span>
+                        <span id="yahoomail" style="color: blue;margin-left: 3px;cursor: pointer;" onclick="yahoo()">yahoomail.com</span>
+                    </div>
+                    
+                    <br><br>
+                    <p>User Name</p>
+                    <input type="text" name="" id="user_name" onclick="fname_val();lname_val()"> <i class="fa fa-check" style="display: none"></i><br><br>
+                    <p>Password</p>
+                    <input type="password" name="" id="pword" onclick="fname_val();lname_val()" oninput="submit()" onblur="password_check_val()"> <i class="fa fa-check" style="display: none" id="pcheck"></i><br><br>
+                    <br>
+                    <input type="submit" disabled="disabled" value="Sign In" id="submit">
+
+
+                
+                </body>
+</html>
+ 
